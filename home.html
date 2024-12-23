@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ice crush</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-family:Century Gothic;
+		 }
+		 header
+		 {
+			background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://img.freepik.com/free-photo/closeup-piece-chocolate-cake-fork-with-liquid-topping_633478-1184.jpg?size=626&ext=jpg&ga=GA1.2.1683663074.1671541985&semt=ais');
+			height:100vh;
+			background-size:cover;
+			background-position:center;
+		 }
+		 ul
+		 {
+			float:right;
+			list-style-type:none; 
+			margin-top:25px;
+		 }
+		 ul li
+		 {
+			display:inline-block;
+		 }
+		 ul li a
+		 {
+			text-decoration:none;
+			color:#fff;
+			padding:5px 20px;
+			border:1px solid transparent;
+			transition:0.6s ease;
+		 }
+		 ul li a:hover
+		 {
+			background-color:#fff;
+			color:#000;
+		 }
+		 .logo img
+		 {
+			float:left;
+			width:100px;
+			height:auto;
+		 }
+		 .main
+		 {
+			max-width:1200px;
+			margin:auto;
+		 }
+		 ul li.active a
+		 {
+			background-color:#fff;
+			color:#000;
+		 }
+		 .title
+		 {
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		 }
+		 .title h1
+		 {
+			color:#fff;
+			font-size:70px;
+			
+		 }
+		 body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: left;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+		 
+		 
+	</style>
+</head>
+<body>
+	<header>
+	
+		<div class="main">
+			<div class="logo"> 
+				<img src="https://img.freepik.com/premium-vector/ice-cream-logo-emblem_9845-103.jpg?size=338&ext=jpg&ga=GA1.2.1683663074.1671541985&semt=sph">
+			</div>
+			<ul>
+			<li class="active"><a href="gallery.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="item.html">Menu Card</a></li>
+			<li><a href="menu.html">Items</a></li>
+			<li><a href="contact.html">Contact us</a></li>
+			<li><a href="about.html">About us</a></li>
+			<li><a href="sign.html">Register</a></li>
+			</ul>
+		
+		</div>
+		<div class="title">
+			<h1>CREAMLAND</h1>
+		</div>
+	</header>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Comparison of Dairy and Nondairy Ice Cream
+	Ice Creams made from cream or butter (dairy ice creams) and from vegetable fat (nondairy ice creams) are essentially comparable in nutritional value.</p>
+	<p>There are differences, however, in the vitamin A content, which is higher in dairy ice cream, and the vitamin E content, which is higher in nondairy ice cream.</p>
+	<p>There are also differences in the proportion of saturated and unsaturated fats present. Ice cream made from palm oil is lower in saturated fat than dairy ice cream, whereas ice cream made with coconut oil has a higher saturated fat content than a butterfat product.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdTEoPteiw3pNKoIy6Cotz2nvhGS1YzxsTg&usqp=CAU" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Arun(CEO & Founder)</h2>
+        <p>Arun Icecreams was started by Mr. R.G. Chandramogan in 1970.In 1985, the brand topped the ice cream sales in terms of volume list, in Tamil Nadu. By 1999, around 700 outlets were present in Tamil Nadu, Karnataka, Kerala and Andhra Pradesh, and 2,300 parlors as of 2018, and the brand extended to Maharashtra and Orissa.
+			</p>
+        
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="data:image/jpeg;base64,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" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Giuseppe Dell'Anno(Popular Baker)</h2>
+        <p>Before stepping foot inside The Great British Bake-Off tent, these contestants were amateur bakers. But they wanted to see if they had what it takes to bring home the cake stand trophy and, as a result, the show changed most of their lives. From forging lifelong friendships to launching successful baking careers, see what your favorite GBBO contestants have been up to since hanging up their aprons.</p>
+        
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD9dYhm5yQCs_EQZ3OthecaPrcvc74q1R0w&usqp=CAU" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Maan</h2>
+        <p>Every mixture is randomly tested during the production process. Butterfat and solid levels are tested. The bacteria levels are measured. Each mixture is also taste-tested.
+
+Ice cream producers also carefully monitor the ingredients that they purchase from outside suppliers.</p>
+
+	   <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+	<center><a href="home.html">goback</a></center>
+
+
+</body>
+</html>

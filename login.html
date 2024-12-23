@@ -1,0 +1,87 @@
+<html>
+<head>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-family:sans-serif;
+		}	
+		body
+			{
+				background:url('https://img.freepik.com/free-photo/ice-cream-cones-with-chocolate-kiwi-table_23-2148505901.jpg?size=626&ext=jpg&ga=GA1.2.1683663074.1671541985&semt=sph')no-repeat;
+				background-size:cover;
+			}
+		.login-form
+		{
+			position:absolute;
+			width:350px;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			 color:#fff;
+		}
+		.login-form h1
+		{
+			font-size:40px;
+			text-align:center;
+			text-transform:uppercase;
+			margin:40px 0;
+		}
+		.login-form p
+		{
+			font-size:20px;
+			margin:15px 0;
+		}
+		.login-form input
+		{
+			font-size:16px;
+			width:100%;
+			padding:15px 10px;
+			border:0;
+			outline:none;
+			border-radius:5px;
+		}
+		.login-form button
+		{
+			font-size:18px;
+			font-weight:bold;
+			margin:20px 0;
+			padding:10px 15px;
+			width:50%;
+			border-radius:5px;
+			border:0;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="login-form">
+		<h1>Login form</h1>
+		<form action="kona.jsp" name="login" method="post" onsubmit="return formValidation()">
+			<p>User Name</p>
+			<input type="text" name="user" placeholder="User Name">
+			<p>Password</p>
+			<input type="password" name="pass" placeholder="Password">
+			<button type="submit">Login</button>
+			
+		</form>
+		<br><br>
+	
+		<center><a href="home.html" style="text-decoration:none; color:white;">goback</a></center>
+			<center><button><a href="sign.html" style="text-decoration:none;">Register</a></button></center>
+	</div>
+	<script>
+		function formValidation() {
+		let use = document.forms["login"]["user"].value;
+		let password = document.forms["login]["pass"].value;
+		
+			if(use=="")
+			{
+				alert("please enter the username");
+				return  false;
+			}
+			
+		}
+	</script>
+</body>
+</html>
